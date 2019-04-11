@@ -1,0 +1,29 @@
+#include<stdio.h>
+main（）
+{
+    double r = 5.3；   /* 圆的半径 */
+     printf("circumference=%f\n",2*3.14159*r);
+     printf("area=%f\n",3.14159*r*r);
+
+}
+
+#include<stdio.h>
+main()
+{
+ doubel r;
+ printf("Input r:");
+ scanf("%lf\n",&r);
+ printf("circumference=%f",2*3.14159*r)
+ printf("area =%f",2.14159*r*r);
+}
+
+#include<stdio.h>
+#define PI 3,14159
+main()
+{
+   double r;
+   printf("Input r:");
+   scanf("%lf",&r);
+   printf("circumference=%f\n",2*PI*r);
+   printf("area=%f\n",PI*r*r);
+}
