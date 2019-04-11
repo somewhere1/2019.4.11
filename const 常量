@@ -1,0 +1,14 @@
+/* 使用宏常量的最大问题是宏常量没有数据类型，编译器对宏常量不进行类型检查，只进行简单的字符串替换，字符串替换时极易产生意想不到的错误。所以就要用到常量
+const,只要将const类型修饰符放在类型名之前，即可将类型名后的标识符声明为具有该类型的常量。由于编译器将其放在只读存储区，不允许改变其值，因此const常量只
+能在定义时赋值 */
+#include<stdio.h>
+main()
+{
+   double r;
+   const double PI 3.14159;
+   printf("Input r:");
+   scanf("%lf",&r);
+   printf("circumference=%f\n",2*PI*r);
+   printf("area=%f\n",PI*r*r);
+}               
+/*  假如把第八排的double改成int，会造成数据截断。把double改成float可能会造成数据丢失 */
